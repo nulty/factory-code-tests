@@ -2,6 +2,8 @@
 
 These coding tests are designed to test your ability to produce quality code in the various languages we use at Factory Media
 
+Please read the [Job Description](JOB-DESCRIPTION.md) for more information about the available role.
+
 There are 4 tests in total.
 
 * [HTML & CSS](https://github.com/factorymedia/factory-code-tests/tree/master/css-code-test)
