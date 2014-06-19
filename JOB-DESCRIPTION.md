@@ -2,16 +2,18 @@
 
 ## Role purpose:  
 
-To work with the rest of the development team and the business to add measurable value to our public facing website, internal tools and projects.  
+To work with the rest of the development team and the business to add measurable value to our public facing website, internal tools and projects. 
+Our software stack is predominently Ruby on Rails and PHP (Wordpress core), so you should be familiar with one or both of the languages, or show an aptitude for learning. 
+
+You should also have a keen interest in front end development and optimisation.
 
 ## Required Skills and experience: 
 * 2+ years professional full stack Ruby and Rails experience
-* TDD or BDD experience preferably with RSpec or Cucumber
 * 2+ years professional PHP experience, including working with PHP frameworks such as CodeIgniter, Zend or CakePHP
 * Wordpress development, plugins and themes
-* Strong front end skills - HTML, CSS, JS, Coffeescript, SCSS
+* Strong front end skills - HTML, CSS, JS, Coffeescript, SCSS and responsive design
 * Strong understanding of front end development that can be demonstrated with live web pages.
-
+* TDD or BDD experience preferably with RSpec or Cucumber
 
 ## Additional Preferred Skills:  
 
