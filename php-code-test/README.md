@@ -7,4 +7,4 @@ Write a PHP application to function as a standalone webpage, e.g. `http://localh
 It should work in a normal Apache/Nginx PHP environment using PHP 5.3 or 5.4
 
 1. Scrape the table on this page for the top 100 grossing films: http://en.wikipedia.org/wiki/List_of_highest-grossing_films. The script should download the page and extract the relevant data.  
-2. Using a graphing library (e.g. GraPHPite, pChart or JpGraph etc.), create a scatter plot of the data showing Adjusted Gross Revenue vs Film Year.  
+2. Using a graphing library (e.g. GraPHPite, pChart or JpGraph etc.), create a scatter plot of the data showing **Adjusted Gross Revenue vs Film Year**.  
