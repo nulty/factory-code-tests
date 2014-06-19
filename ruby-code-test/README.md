@@ -12,8 +12,10 @@ Arguments to the command are separated by spaces and follow the command characte
 
 Pixel co-ordinates are represented by a pair of integers: 
 
-1. a column number between 1 and M, and 
-2. a row number between 1 and N. Where 1 <= M, N <= 250. 
+1. A column number between _1_ and _M_, and 
+2. A row number between _1_ and _N_. 
+
+Where _1 <= M_, _N <= 250_. 
 
 The origin sits in the upper-left of the table.  
 Colours are specified by capital letters.  
@@ -65,6 +67,6 @@ JJJJJ
 ##￼Submission  
 
 We prefer submissions in Ruby complete with tests using your preferred testing library.  
-Please provide an executable solution with any source files in a common archive format (ZIP, RAR, TAR etc.) or uploaded to your GitHub profile
+Please provide an executable solution with any source files in a common archive format (ZIP, RAR, TAR etc.)
 
 ￼
