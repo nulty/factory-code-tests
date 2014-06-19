@@ -2,7 +2,7 @@
 
 **Please complete this exercise in `test.html` in this folder**
 
-For this test you will need to make a AJAX request to github to get the last 20 commits to rails, and then add the avatars of the committers to the **#content** div. 
+For this test you will need to make a AJAX request to github to get the last 20 commits to rails, and then add the avatars of the committers to the `#content` div. 
 
 The more commits they have made, the bigger the avatar should be. For example:
 
