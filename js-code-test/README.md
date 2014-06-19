@@ -1,6 +1,6 @@
 # JavaScript Coding Test
 
-## Please complete this exercise in `test.html` in this folder
+**Please complete this exercise in `test.html` in this folder**
 
 For this test you will need to make a AJAX request to github to get the last 20 commits to rails, and then add the avatars of the committers to the **#content** div. 
 
@@ -17,4 +17,4 @@ You may also work in Coffeescript if you prefer, as we use this extensively at F
 
 ### Example Result:
 
-![Screenshot](example.jpg)
+![Screenshot](exampl.jpg)
