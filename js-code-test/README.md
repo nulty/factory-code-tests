@@ -2,7 +2,7 @@
 
 **Please complete this exercise in `test.html` in this folder**
 
-For this test you will need to make a AJAX request to github to get the last 20 commits to rails, and then add the avatars of the committers to the `#content` div. 
+For this test you will need to make a AJAX request to GitHub to get the last 20 commits to rails, and then add the avatars of the committers to the `#content` div. 
 
 The more commits they have made, the bigger the avatar should be. For example:
 
@@ -11,9 +11,12 @@ The more commits they have made, the bigger the avatar should be. For example:
 * 3 commits, 70px x 70px  
 * ...  
 
-You can use whatever libraries you want, jQuery is already provided in the test.html file. Feel free to add any styling you wish as well.
+You can use whatever libraries you want, jQuery is already provided in the test.html file. 
+Feel free to add any CSS styling you wish as well.
 
 You may also work in Coffeescript if you prefer, as we use this extensively at Factory Media.
+
+Bonus points for using a JS testing library!
 
 ### Example Result:
 
