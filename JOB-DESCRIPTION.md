@@ -5,14 +5,12 @@
 To work with the rest of the development team and the business to add measurable value to our public facing website, internal tools and projects.  
 
 ## Required Skills and experience: 
-* 2+ years professional full stack Ruby and Rails experience  
-* TDD or BDD experience preferably with RSpec or Cucumber  
-
-* 2+ years professional PHP experience, including working with PHP frameworks such as CodeIgniter, Zend or CakePHP  
-* Wordpress development, plugins and themes  
-
-* Strong front end skills - HTML, CSS, JS, Coffeescript, SCSS  
-* Strong understanding of front end development that can be demonstrated with live web pages.  
+* 2+ years professional full stack Ruby and Rails experience
+* TDD or BDD experience preferably with RSpec or Cucumber
+* 2+ years professional PHP experience, including working with PHP frameworks such as CodeIgniter, Zend or CakePHP
+* Wordpress development, plugins and themes
+* Strong front end skills - HTML, CSS, JS, Coffeescript, SCSS
+* Strong understanding of front end development that can be demonstrated with live web pages.
 
 
 ## Additional Preferred Skills:  
