@@ -1,0 +1,1 @@
+Your task is to create a login box with HTML and CSS as close to the screenshot.jpg as you think is reasonable. We've included the font in the style.css file too, please complete the task in index.html. Bonus points for responsive design!
