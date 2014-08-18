@@ -12,21 +12,25 @@ h1 {
   background-color: #e1c290;
 }
 
-.page_bg_color {
-  background-color: #fffaf6;
-}
-
 #login_rel {
   position: absolute; left: 50%;
   width: 25%;
 }
 
-#login_abs {
-  position: relative; left: -50%; border: solid black 1px;
-  top: 220px;
+#login_inner {
+  border-radius: 8px;
   background-color: #fffaf6;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 15px;
+  box-shadow: 0px 1px 5px #a5998a;
+
+}
+
+#login_abs {
+  position: relative; left: -50%;
+  top: 220px;padding: 10px;
+  background-color: #edd8be;
+  border-radius: 15px;
 }
 
 .uppercase {
