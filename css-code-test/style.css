@@ -48,3 +48,29 @@ h1 {
 .light-grey {
   color: #bbb4ac;
 }
+
+.login_input {
+  vertical-align: top;
+  margin-top: 10px;
+  display: inline-block;
+  width: 210px;
+}
+
+.text_inputs {
+  display: inline-block;
+}
+
+.input-label {
+  color: #7e7975;
+}
+
+hr {
+  color: #edd8be;
+}
+
+input {
+  margin-top: 10px;
+  border: solid 2px grey; border-radius: 5px; padding: 5px; width: 90%;
+  box-sizing: content-box;
+  font-family: "Lato";
+}
