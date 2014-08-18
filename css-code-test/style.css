@@ -4,7 +4,43 @@
 body {
   font-family: 'Lato';
 }
+h1 {
+  font-size: 1.2em;
+}
 
 .bg_color {
   background-color: #e1c290;
+}
+
+.page_bg_color {
+  background-color: #fffaf6;
+}
+
+#login_rel {
+  position: absolute; left: 50%;
+  width: 25%;
+}
+
+#login_abs {
+  position: relative; left: -50%; border: solid black 1px;
+  top: 220px;
+  background-color: #fffaf6;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.grey {
+  color: #696460;
+}
+
+.yellow {
+  color: #efb75e;
+}
+
+.light-grey {
+  color: #bbb4ac;
 }
