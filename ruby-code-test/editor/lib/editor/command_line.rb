@@ -3,7 +3,7 @@ class CommandLine
   attr_reader :command, :args
 
   def initialize(args)
-    @args = args.chars
+    @args = args.split
     @command = @args.shift
     run_command
   end
