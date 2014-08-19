@@ -15,7 +15,8 @@ $(document).ready(function() {
 
 var dimension = function(n) {
     base = 50;
-    return n*10+50;
+    multiplier = n-1;
+    return multiplier*10+50;
 }
 
 var create_display_object = function(urls) {
