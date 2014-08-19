@@ -7,7 +7,7 @@ autoload :CommandLine, 'editor/command_line.rb'
 autoload :Image, 'editor/image.rb'
 
 unless ENV["EDITOR_ENV"] == "test"
-  while((input = STDIN.gets.chomp) !=  "C") do
+  while((input = STDIN.gets.chomp) !=  "X") do
     CommandLine.new(input)
   end
 
