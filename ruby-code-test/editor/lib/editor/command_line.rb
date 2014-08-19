@@ -5,13 +5,15 @@ class CommandLine
   def initialize(args)
     @args = args.split
     @command = @args.shift
-    run_command
+    CommandLine.run_command(self)
   end
 
-  def run_command
-    case @command
+  def self.run_command(input)
+    case input.command
     when "I"
-      @image = Image.new(*@args)
+      @image = Image.new(*input.args)
+    when "S"
+      @image.print_image
     end
   end
 end

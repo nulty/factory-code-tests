@@ -45,4 +45,13 @@ describe Image do
     end
   end
 
+  describe "#print_image" do
+    let(:image) { Image.new(5,5) }
+
+    it "prints the image to the IO" do
+      STDOUT.should_receive(:write).with("00000").exactly(5).times
+      STDOUT.should_receive(:write).with("\n").exactly(5).times
+      image.print_image
+    end
+  end
 end

@@ -10,4 +10,11 @@ class Image
     end
     @grid = Array.new(@x, Array.new(@y, 0))
   end
+
+  def print_image
+    grid.each do |row|
+      print row.join
+      puts
+    end
+  end
 end
