@@ -8,41 +8,7 @@
     <h1>JavaScript Coding Test</h1>
     <div id="content"></div>
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' type='text/javascript'></script>
-    <script>
-      $(document).ready(function() {
-          var url =  "https://api.github.com/repos/rails/rails/commits";
-          $.getJSON(url + "?callback=?", null, function(commits) {
-              var output = commits.data.slice(0,20);
-              urls = [];
-              for(i in output) {
-                urls.push(output[i].committer.avatar_url)
-              }
-
-              display = {}
-              for(i in urls) {
-                avatar_url = urls[i]
-                display[avatar_url] = 0
-                // count the occurance of this avatar_url
-                for(var j=0; j<20;j++) {
-                  if(avatar_url == urls[j]){
-                      display[avatar_url]++;
-                    }
-                }
-              }
-
-              for(url in display) {
-                  n_of_commits = display[url];
-                  d = dimension(n_of_commits)
-                  $("#content").append("<img src='"+url+" width='"+d+"' height='"+d+"' />");
-              }
-          });
-      });
-
-      var dimension = function(n) {
-        base = 50;
-        return n*10+50;
-      }
-    </script>
+    <script type="text/javascript" src="github_commits.js"></script>
 
   <div id="content"></div>
   </body>
