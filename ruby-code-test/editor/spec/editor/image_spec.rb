@@ -63,4 +63,18 @@ describe Image do
       expect{image.color_pixel(2,2, color)}.to change {image.grid[2][2]}.to(color)
     end
   end
+
+  describe "#vertical_color" do
+    let(:image) { Image.new(15,15) }
+
+    it "colours the correct pixels" do
+      color = "X"
+      expect{image.vertical_color("6", "9", "12", color)}.to change {image.grid[(9..12)].map {|r| r[6]}}.to(Array.new(4, "X"))
+    end
+
+    it "raises ArgumentError if from is bigger than to" do
+      color = "X"
+      expect{image.vertical_color("6", "13", "12", color)}.to raise_error(ArgumentError)
+    end
+  end
 end

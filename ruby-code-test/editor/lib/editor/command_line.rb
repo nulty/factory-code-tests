@@ -16,6 +16,8 @@ class CommandLine
       @image.print_image
     when "L"
       @image.color_pixel(*input.args)
+    when "V"
+      @image.vertical_color(*input.args)
     end
   end
 end

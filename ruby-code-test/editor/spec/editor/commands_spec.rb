@@ -57,6 +57,25 @@ describe CommandLine do
       end
 
     end
+
+    context "with V command" do
+
+      let(:args) { "V 5 9 14 F" }
+      let(:input) { CommandLine.new(args) }
+
+      before do
+        CommandLine.new("I 15 15")
+      end
+
+      it "creates a new command line" do
+        expect(input.command).to eq("V")
+      end
+
+      it "creates a new command line" do
+        expect(input.args).to eq(["5", "9", "14", "F"])
+      end
+
+    end
   end
 
 end

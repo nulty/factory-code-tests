@@ -21,4 +21,11 @@ class Image
   def color_pixel(x, y, color)
     grid[x.to_i][y.to_i] = color
   end
+
+  def vertical_color(column, from, to, color)
+    column, from, to = column.to_i, from.to_i, to.to_i
+    raise(ArgumentError, "#{from} can't be bigger than #{to}") if from > to
+
+    (from..to).each {|n| grid[n][column] = color }
+  end
 end
