@@ -17,4 +17,8 @@ class Image
       puts
     end
   end
+
+  def color_pixel(x, y, color)
+    grid[x.to_i][y.to_i] = color
+  end
 end

@@ -54,4 +54,13 @@ describe Image do
       image.print_image
     end
   end
+
+  describe "#color_pixel" do
+    let(:image) { Image.new(5,5) }
+
+    it "prints the image to the IO" do
+      color = "X"
+      expect{image.color_pixel(2,2, color)}.to change {image.grid[2][2]}.to(color)
+    end
+  end
 end

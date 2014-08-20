@@ -14,6 +14,8 @@ class CommandLine
       @image = Image.new(*input.args)
     when "S"
       @image.print_image
+    when "L"
+      @image.color_pixel(*input.args)
     end
   end
 end

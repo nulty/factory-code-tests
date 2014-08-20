@@ -37,6 +37,26 @@ describe CommandLine do
       end
 
     end
+
+    context "with L command" do
+
+      let(:args) { "L 5 5 R" }
+      let(:input) { CommandLine.new(args) }
+
+      before do
+        CommandLine.new("I 5 5")
+        Image.any_instance.should_receive(:color_pixel).with("5", "5", "R")
+      end
+
+      it "creates a new command line" do
+        expect(input.command).to eq("L")
+      end
+
+      it "creates a new command line" do
+        expect(input.args).to eq(["5", "5", "R"])
+      end
+
+    end
   end
 
 end
