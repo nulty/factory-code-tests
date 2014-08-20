@@ -18,6 +18,8 @@ class CommandLine
       @image.color_pixel(*input.args)
     when "V"
       @image.vertical_color(*input.args)
+    when "H"
+      @image.horizontal_color(*input.args)
     end
   end
 end

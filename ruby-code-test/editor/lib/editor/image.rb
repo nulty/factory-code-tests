@@ -28,4 +28,11 @@ class Image
 
     (from..to).each {|n| grid[n][column] = color }
   end
+
+  def horizontal_color(from, to, row, color)
+    row, from, to = row.to_i, from.to_i, to.to_i
+    raise(ArgumentError, "#{from} can't be bigger than #{to}") if from > to
+
+    (from..to).each {|n| grid[row][n] = color }
+  end
 end

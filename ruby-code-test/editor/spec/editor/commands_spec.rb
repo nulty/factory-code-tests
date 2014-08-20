@@ -76,6 +76,25 @@ describe CommandLine do
       end
 
     end
+
+    context "with H command" do
+
+      let(:args) { "H 4 9 14 F" }
+      let(:input) { CommandLine.new(args) }
+
+      before do
+        CommandLine.new("I 15 15")
+      end
+
+      it "creates a new command line" do
+        expect(input.command).to eq("H")
+      end
+
+      it "creates a new command line" do
+        expect(input.args).to eq(["4", "9", "14", "F"])
+      end
+
+    end
   end
 
 end
