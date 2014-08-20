@@ -1,6 +1,6 @@
 class Image
 
-  attr_reader :grid
+  attr_accessor :grid
 
   def initialize(x,y)
     @x = x.to_i
@@ -44,5 +44,9 @@ class Image
         element == old_color ? element = color : element = element
       end
     end
+  end
+
+  def clear_image
+    @grid = Array.new(@x) { Array.new(@y, 0)}
   end
 end

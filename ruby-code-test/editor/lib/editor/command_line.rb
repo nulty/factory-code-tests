@@ -22,6 +22,11 @@ class CommandLine
       @image.horizontal_color(*input.args)
     when "F"
       @image.replace_color(*input.args)
+    when "C"
+      @image.clear_color
+    else
+      puts "That is not a valid command."
+      puts "The commands are I, S, L, V, H, F, C and X."
     end
   end
 end

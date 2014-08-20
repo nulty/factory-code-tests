@@ -125,4 +125,18 @@ describe Image do
       end
     end
   end
+
+  describe "#clear_image" do
+    let(:image) { Image.new(10,10) }
+
+    before(:each) do
+      image.grid[5][2..6] = Array.new(5, "T")
+      image.grid[9] = Array.new(10, "%")
+    end
+
+    it "resets the grid to all 0" do
+      image.clear_image
+      expect(image.grid).to eq @test_grid
+    end
+  end
 end
