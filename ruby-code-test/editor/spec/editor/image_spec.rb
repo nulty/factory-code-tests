@@ -14,6 +14,16 @@ describe Image do
                   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
 
+    @fill_grid = [["-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+                  ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+                  ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+                  ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+                  ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+                  ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+                  ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+                  ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+                  ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+                  ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-"]]
   end
 
   let(:args) { ["10", "10"] }
@@ -89,6 +99,30 @@ describe Image do
     it "raises ArgumentError if from is bigger than to" do
       color = "X"
       expect{image.horizontal_color("13", "12", "6", color)}.to raise_error(ArgumentError)
+    end
+  end
+
+  describe "#fill_color" do
+    let(:image) { Image.new(10,10) }
+
+    it "colours the correct pixels" do
+      color = "-"
+      image.replace_color("3", "3", color)
+      expect(image.grid).to eq @fill_grid
+    end
+
+    context 'image with altered pixels' do
+
+      before(:each) do
+        image.grid[5][5] = "N"
+      end
+
+      it "doesnt color unmatched pixels" do
+        expect(image.grid[5][5]).to eq "N"
+        color = "-"
+        image.replace_color("3", "3", color)
+        expect(image.grid[5][5]).to eq "N"
+      end
     end
   end
 end

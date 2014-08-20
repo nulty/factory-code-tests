@@ -35,4 +35,14 @@ class Image
 
     (from..to).each {|n| grid[row][n] = color }
   end
+
+  def replace_color(x, y, color)
+    x, y = x.to_i, y.to_i
+    old_color = grid.fetch(x).fetch(y)
+    grid.map do |row|
+      row.map! do |element|
+        element == old_color ? element = color : element = element
+      end
+    end
+  end
 end

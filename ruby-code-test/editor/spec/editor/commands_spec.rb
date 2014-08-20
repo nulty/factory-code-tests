@@ -95,6 +95,25 @@ describe CommandLine do
       end
 
     end
+
+    context "with F command" do
+
+      let(:args) { "F 9 14 -" }
+      let(:input) { CommandLine.new(args) }
+
+      before do
+        CommandLine.new("I 15 15")
+      end
+
+      it "creates a new command line" do
+        expect(input.command).to eq("F")
+      end
+
+      it "creates a new command line" do
+        expect(input.args).to eq(["9", "14", "-"])
+      end
+
+    end
   end
 
 end

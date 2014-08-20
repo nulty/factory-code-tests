@@ -20,6 +20,8 @@ class CommandLine
       @image.vertical_color(*input.args)
     when "H"
       @image.horizontal_color(*input.args)
+    when "F"
+      @image.replace_color(*input.args)
     end
   end
 end
